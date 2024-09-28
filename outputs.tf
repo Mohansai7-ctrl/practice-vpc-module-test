@@ -1,6 +1,7 @@
-output "vpc_info" {   #here, output names has to give as same as root module output, as we are taking reference from them
+output "vpc_id" {   #These output names should be anything, but we are used as same as root module output names
 
-    value = module.vpc.vpc_info  #value names should be same as output names
+    value = module.vpc.vpc_id  #value names should be as module.module_name.output_name(thes names we will get from outputs readme.MD File, it should not be changed
+    #value name should be same as output name provided in root module output
 }
 
 output "public_subnet_ids" {
